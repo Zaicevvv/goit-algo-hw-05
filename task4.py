@@ -38,7 +38,7 @@ def change_contact(args, contacts):
 
 @input_error 
 def show_phone(args, contacts):
-    name = args[0]
+    name, = args
     return f'name: {name}, phone: {contacts[name]}'
 
 def show_all(contacts):
